@@ -1,0 +1,19 @@
+volumes:
+  postgres:
+    external: true
+
+services:
+  db:
+    image: postgres
+    restart: always
+    tty: true
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    ports:
+      - "5432:5432"
+    volumes:
+        - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DATABASE=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

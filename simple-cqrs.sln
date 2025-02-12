@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartenCqrs", "MartenCqrs\MartenCqrs.csproj", "{28310099-DC4B-4C1E-A114-3F4A6B00C933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Folder", "Solution Folder", "{F3537687-16CC-477B-834E-2E251D16973B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Packages.props = Directory.Packages.props
+		compose.yaml = compose.yaml
+		ReadMe.md = ReadMe.md
+		.gitignore = .gitignore
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartenCqrs.Test", "MartenCqrs.Test\MartenCqrs.Test.csproj", "{031B455C-71B8-4E3C-A3A9-6ABDC3487FFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28310099-DC4B-4C1E-A114-3F4A6B00C933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28310099-DC4B-4C1E-A114-3F4A6B00C933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28310099-DC4B-4C1E-A114-3F4A6B00C933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28310099-DC4B-4C1E-A114-3F4A6B00C933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031B455C-71B8-4E3C-A3A9-6ABDC3487FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031B455C-71B8-4E3C-A3A9-6ABDC3487FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031B455C-71B8-4E3C-A3A9-6ABDC3487FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031B455C-71B8-4E3C-A3A9-6ABDC3487FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

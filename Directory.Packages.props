@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectDependencies">
+    <PackageVersion Include="Alba" Version="8.1.1" />
+    <PackageVersion Include="AutoFixture.Xunit2" Version="4.18.1" />
+    <PackageVersion Include="FluentResults" Version="3.16.0" />
+    <PackageVersion Include="Marten" Version="7.37.0" />
+    <PackageVersion Include="Marten.AspNetCore" Version="7.37.0" />
+    <PackageVersion Include="Microsoft.Azure.Functions.Worker" Version="2.0.0" />
+    <PackageVersion Include="Microsoft.Azure.Functions.Worker.Extensions.Http" Version="3.2.0" />
+    <PackageVersion Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.0.0" />
+    <PackageVersion Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="2.0.0" />
+    <PackageVersion Include="Weasel.Core" Version="7.13.5" />
+  </ItemGroup>
+  <ItemGroup Label="TestDependencies">
+    <PackageVersion Include="xunit" Version="2.8.0" />
+    <PackageVersion Include="xunit.extensibility.core" Version="2.7.1" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+    <PackageVersion Include="coverlet.collector" Version="6.0.1" />
+    <PackageVersion Include="Autofixture.Xunit2" Version="4.17.0" />
+    <PackageVersion Include="FluentAssertions" Version="6.9.0" />
+    <PackageVersion Include="NSubstitute" Version="5.3.0" />
+  </ItemGroup>
+</Project>
