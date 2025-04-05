@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "SimpleCqrs.Command": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7103",
-      "launchBrowser": false
-    }
-  }
-}
