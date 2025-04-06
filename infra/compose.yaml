@@ -4,7 +4,6 @@ volumes:
     
 networks:
   sb-emulator:
-    driver: bridge
 
 services:
   db:
@@ -26,9 +25,10 @@ services:
     container_name: "service-bus-emulator"
     image: mcr.microsoft.com/azure-messaging/servicebus-emulator:latest
     volumes:
-      - "${CONFIG_PATH}:/ServiceBus_Emulator/ConfigFiles/Config.json"
+      - "${CONFIG_PATH}:/service-bus-config.json"
     ports:
       - "5672:5672"
+      - "5300:5300"
     environment:
       SQL_SERVER: sqledge
       MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}

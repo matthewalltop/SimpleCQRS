@@ -8,7 +8,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Marten" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" />
         <PackageReference Include="Microsoft.Extensions.Hosting" />
         <PackageReference Include="WolverineFx" />
+        <PackageReference Include="WolverineFx.AzureServiceBus" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Invoice.Domain\Invoice.Domain.csproj" />
+      <ProjectReference Include="..\..\MartenCqrs.Contracts\MartenCqrs.Contracts.csproj" />
+      <ProjectReference Include="..\..\MartenCqrs.Core\MartenCqrs.Core.csproj" />
+      <ProjectReference Include="..\..\MartenCqrs.Infrastructure\MartenCqrs.Infrastructure.csproj" />
+      <ProjectReference Include="..\Invoice.Domain\Invoice.Domain.csproj" />
+      <ProjectReference Include="..\MartenCqrs.Contracts\MartenCqrs.Contracts.csproj" />
     </ItemGroup>
 </Project>

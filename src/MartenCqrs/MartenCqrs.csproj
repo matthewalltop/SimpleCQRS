@@ -42,4 +42,11 @@
       <Folder Include="Core\" />
       <Folder Include="Infrastructure\" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\MartenCqrs.Contracts\MartenCqrs.Contracts.csproj" />
+      <ProjectReference Include="..\..\MartenCqrs.Core\MartenCqrs.Core.csproj" />
+      <ProjectReference Include="..\..\MartenCqrs.Infrastructure\MartenCqrs.Infrastructure.csproj" />
+      <ProjectReference Include="..\MartenCqrs.Contracts\MartenCqrs.Contracts.csproj" />
+      <ProjectReference Include="..\MartenCqrs.Core\MartenCqrs.Core.csproj" />
+    </ItemGroup>
 </Project>

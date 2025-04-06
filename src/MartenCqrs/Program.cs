@@ -1,11 +1,11 @@
+using Biller.Domain;
 using Marten;
+using MartenCqrs.Common.Events.Invoice;
+using MartenCqrs.Common.Events.Payer;
 using Microsoft.AspNetCore.Hosting;
 using Weasel.Core;
-using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using SimpleCqrs.Command;
 using Wolverine.Marten;
 
 var configureServices = new Action<IServiceCollection>(services =>
@@ -23,9 +23,10 @@ var configureServices = new Action<IServiceCollection>(services =>
         _.AutoCreateSchemaObjects = AutoCreate.All;
         
         _.Events.AddEventTypes([
-            typeof(ProductAdded),
-            typeof(ProductQuantityChanged),
-            typeof(ProductRemoved)
+            typeof(BillerCreated),
+            typeof(PayerCreated),
+            typeof(InvoiceCreated),
+            typeof(InvoicePaid)
         ]);
 
         return _;
